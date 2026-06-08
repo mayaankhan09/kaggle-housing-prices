@@ -1,0 +1,37 @@
+# Data files — never commit competition data
+data/
+*.csv
+*.zip
+
+# Kaggle credentials — NEVER commit this
+.kaggle/
+kaggle.json
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Model artifacts (optional — uncomment to track models in git)
+# models/
+# *.pkl
+# *.joblib
