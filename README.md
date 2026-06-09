@@ -160,33 +160,6 @@ kaggle-housing-prices/
 └── .gitignore
 ```
 
----
-
-## ⚡ How to Reproduce
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/<your-username>/kaggle-housing-prices
-cd kaggle-housing-prices
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Set up Kaggle API (skip if you already have kaggle.json)
-# Go to kaggle.com → Account → API → Create New Token
-# Move kaggle.json to ~/.kaggle/kaggle.json
-chmod 600 ~/.kaggle/kaggle.json
-
-# 4. Download the competition data
-kaggle competitions download \
-  -c house-prices-advanced-regression-techniques -p data/
-cd data && unzip house-prices-advanced-regression-techniques.zip && cd ..
-
-# 5. Run the notebook
-jupyter notebook notebooks/housing_pipeline.ipynb
-# Then: Kernel → Restart & Run All
-```
-
 The notebook runs top-to-bottom without any manual steps.
 Submission CSV is written to `submissions/submission_xgb_tuned.csv`.
 
